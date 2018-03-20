@@ -59,4 +59,8 @@
     <bean id="upmsApiService" class="com.zheng.upms.rpc.service.impl.UpmsApiServiceImpl"/>
     <dubbo:service interface="com.zheng.upms.rpc.api.UpmsApiService" ref="upmsApiService" timeout="10000"/>
 
+    <!-- 用户ip -->
+    <bean id="upmsUserIpService" class="com.zheng.upms.rpc.service.impl.UpmsUserIpServiceImpl"/>
+    <dubbo:service interface="com.zheng.upms.rpc.api.UpmsUserIpService" ref="upmsUserIpService" timeout="10000"/>
+
 </beans>
